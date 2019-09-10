@@ -1,0 +1,14 @@
+#########
+### Script: Parsnp_run.pbs 
+#########
+#PBS -N 09Sept2019_parsnp.fasta
+#PBS -q normal
+#PBS -A i.warner
+#PBS -S /bin/bash
+#PBS -r n 
+#PBS -l select=2:ncpus=4:mem=250GB
+#PBS -l walltime=100:00:00
+
+cd /home/i.warner/bin/Parsnp-Linux64-v1.2/
+
+./parsnp -r /shares/common/users/i.warner/FASTA_sequences/Ecoli_MG1655_genome_NC000913.3.fasta -q /shares/common/users/i.warner/FASTA_sequences/Ecoli_B7A_genome_CP005998.1.fasta, /shares/common/users/i.warner/FASTA_sequences/Ecoli_042_genome_NC017626.1.fasta, /shares/common/users/i.warner/FASTA_sequences/Ecoli_E24377A_genome_NC009801.1.fasta, /shares/common/users/i.warner/FASTA_sequences/Ecoli_UTI89_genome_NC007946.1.fasta, /shares/common/users/i.warner/FASTA_sequences/Ecoli_HS_genome_009800.1.fasta -o /shares/common/users/i.warner/parsnp_output 

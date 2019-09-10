@@ -1,0 +1,16 @@
+#########
+### Script: MUMmer_run.pbs 
+#########
+#PBS -N 05Sept2019_MUMmer.fasta
+#PBS -q normal
+#PBS -A i.warner
+#PBS -S /bin/bash
+#PBS -r n 
+#PBS -l select=2:ncpus=4:mem=250GB
+#PBS -l walltime=100:00:00
+
+module load MUMmer/4.0.0beta
+
+cd /shares/common/users/i.warner/FASTA_sequences
+
+nucmer -p 05SeptMUMmer_align FASTA_sequences/Ecoli_MG1655_genome_NC000913.3.fasta Ecoli_genomes_all.fasta 

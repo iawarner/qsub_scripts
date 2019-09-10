@@ -23,6 +23,8 @@ Any time you want to make a new repository, you'll have to `git init` it
 
 If you need to connect your machine to the remote server, use `git remote add [variable name] [Remote Server Link]`
 
+To see your remote repositories use `git remote -v` (v flag = verbose) and it will print them in terminal 
+
 ### Staging and Committing Changes 
 
 Use `git add [file]` to add that file to the staging area 

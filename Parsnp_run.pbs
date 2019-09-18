@@ -11,4 +11,4 @@
 
 cd /home/i.warner/bin/Parsnp-Linux64-v1.2/
 
-./parsnp -r /shares/common/users/i.warner/FASTA_sequences/Ecoli_MG1655_genome_NC000913.3.fasta -d /shares/common/users/i.warner/FASTA_sequences/ -o /shares/common/users/i.warner/FASTA_sequences/alignments
+./parsnp -r /shares/common/users/i.warner/FASTA_sequences/Ecoli_MG1655_genome_NC000913.3.fasta -d /shares/common/users/i.warner/FASTA_sequences/ -p 2 -o /shares/common/users/i.warner/FASTA_sequences/alignments

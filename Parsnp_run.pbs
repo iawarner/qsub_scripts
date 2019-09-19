@@ -1,7 +1,7 @@
 #########
 ### Script: Parsnp_run.pbs 
 #########
-#PBS -N 18Sept2019_parsnp.fasta
+#PBS -N 19Sept2019_parsnp.fasta
 #PBS -q normal
 #PBS -A i.warner
 #PBS -S /bin/bash

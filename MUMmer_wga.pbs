@@ -14,4 +14,4 @@ cd /shares/common/users/i.warner/FASTA_sequences
 
 module load MUMmer/4.0.0beta
 
-./nucmer -p 09Oct2019_All_Plus_Outgroup /shares/common/users/i.warner/ref_genomes/BW25113-CP009273.1.fasta All_Plus_Outgroup.fasta
+./nucmer -p "09Oct2019_All_Plus_Outgroup" /shares/common/users/i.warner/ref_genomes/BW25113-CP009273.1.fasta All_Plus_Outgroup.fasta 

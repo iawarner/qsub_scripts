@@ -11,4 +11,4 @@
 
 cd /home/i.warner/bin/Parsnp-Linux64-v1.2/
 
-./parsnp -g /shares/common/users/i.warner/ref_genomes/BW25113-CP009273.1.gb -d /shares/common/users/i.warner/FASTA_sequences/ -p 2 -o /shares/common/users/i.warner/parsnp_output
+./parsnp -g /shares/common/users/i.warner/ref_genomes/BW25113-CP009273.1.gb -d /shares/common/users/i.warner/FASTA_sequences/ -p 2 -o /shares/common/users/i.warner/parsnp_output 

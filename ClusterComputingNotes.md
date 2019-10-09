@@ -31,6 +31,12 @@ check your loaded modules using `module list`
 
 see any changes the module will make to your environment with `module display [module name]`
 
+remove unwanted modules with `module unload "module name"`
+
+**for information about the module you want to use**
+`module help "modulename"` for the long version
+`module whatis "modulename"` for the short version 
+
 **using the module with PBS** 
 as long as the module is loaded on the node(s), it should be useable with `module load [module name]` in the script
 
@@ -39,7 +45,11 @@ as long as the module is loaded on the node(s), it should be useable with `modul
 and then `module load` should work 
 
 ### Using Cluster Software in PBS Scripts 
+Normally just use the command `module load "modulename"` to use the module like any program. 
 
+But if you're having issues loading it, you can also use module load this way: 
+`. /share/software/Modules/default/init/bash` 
+which will make sure the module is loaded on the cluster's nodes. 
 
 ### Installing your own software 
 
@@ -136,6 +146,8 @@ mafft --globalpair --maxiterate 1000 /shares/common/users/i.warner/FASTA_sequenc
 `-r` is reading capabilities; it's almost always `n`
 `-l` is how much memory you'll need for your job, and how much time it will take
 these are always in separate lines in the PBS script, but on the same line when given on the command line 
+`-o` is the path used for the standard output of the batch job 
+`-e` is the path used for the standard error output of the batch job 
 
 Once you have these parameters in place, you can give it commands in the scripting language you specified earlier (it takes python, perl, R, etc. - I just stick with bash)
 

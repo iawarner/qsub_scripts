@@ -13,5 +13,4 @@ module load MUMmer/4.0.0beta
 
 cd /shares/common/users/i.warner/FASTA_sequences
 
-mummer Ecoli_MG1655_genome_NC000913.3.fasta Ecoli_genomes_all.fasta 
-
+nucmer -p 05SeptMUMmer_align FASTA_sequences/Ecoli_MG1655_genome_NC000913.3.fasta Ecoli_genomes_all.fasta 

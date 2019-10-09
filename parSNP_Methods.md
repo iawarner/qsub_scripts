@@ -1,4 +1,4 @@
-# parSNP Methods 
+# parSNP Methods and Logs
 
 ## Author: Isabel Warner
 ## Date: 09Oct2019
@@ -100,3 +100,9 @@ mem Efficiency:       0.1706 %
 ```
 
 Still having the same issue with MUMi. 
+
+From parSNP documentation: 
+"_*Why should I not use parsnp?*
+If you are interested in pan genome / whole genome alignment, existing tools for the job that perform well include Mauve, Mugsy, among others. In addition, Parsnp is tailored for intraspecific genome analysis (outbreak anlysis of a pathogen, etc). One main limitation of Parsnp is that it cannot handle subsets (core genome only) and is not as sensitive as existing methods._"
+
+Going to read more about Mauve, and try to run the MUMmer module to see if that works on the cluster. 

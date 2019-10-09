@@ -1,0 +1,18 @@
+#########
+### Script: mafft_run.pbs 
+#########
+#PBS -N mafft_alignment
+#PBS -q normal
+#PBS -A i.warner
+#PBS -S /bin/bash
+#PBS -r n 
+#PBS -l select=1:ncpus=1:mem=4GB
+#PBS -l walltime=12:00:00
+
+DIR=/shares/common/users/i.warner/output_mafft/
+
+module load /home/bin/mafft 
+
+cd $DIR 
+
+mafft --memsavetree /shares/common/users/i.warner/FASTA_sequences/Ecoli_genomes_all.fasta 

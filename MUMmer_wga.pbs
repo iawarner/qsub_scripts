@@ -1,9 +1,9 @@
 #########
-### Script:  
+### Script: MUMmer_wga.pbs
 #########
 #PBS -N 09Oct2019_MUMmer.fasta
 #PBS -q normal
-#PBS -o /shares/common/i.warner/MUMmer_output
+#PBS -o /shares/common/users/i.warner/MUMmer_output
 #PBS -A i.warner
 #PBS -S /bin/bash
 #PBS -r n 
@@ -11,5 +11,7 @@
 #PBS -l walltime=100:00:00
 
 cd /shares/common/users/i.warner/FASTA_sequences
+
+load module MUMmer/4.0.0beta
 
 ./nucmer -p 09Oct2019_All_Plus_Outgroup /shares/common/users/i.warner/ref_genomes/BW25113-CP009273.1.fasta All_Plus_Outgroup.fasta

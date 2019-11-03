@@ -1,0 +1,12 @@
+#########
+### Script: Mauve_run.pbs
+#########
+#PBS -N 10Oct2019Mauve.fasta
+#PBS -q normal
+#PBS -o /shares/common/users/i.warner/
+#PBS -A i.warner
+#PBS -S /bin/bash
+#PBS -r n 
+#PBS -l select=2:ncpus=4:mem=250GB
+#PBS -l walltime=100:00:00
+

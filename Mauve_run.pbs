@@ -1,7 +1,7 @@
 #########
 ### Script: Mauve_run.pbs
 #########
-#PBS -N 7Nov2019Mauve.fasta
+#PBS -N 07Nov2019Mauve.fasta
 #PBS -q normal
 #PBS -o /shares/common/users/i.warner/
 #PBS -A i.warner
@@ -12,4 +12,4 @@
 
 cd /home/i.warner/bin/mauve_snapshot_2015-02-13/linux-x64/
 
-mauveAligner 
+mauveAligner --output=/shares/common/users/i.warner/mauve_output/07Nov19Mauve.mauve /shares/common/users/i.warner/FASTA_sequences/All_Plus_Outgroup.fasta 

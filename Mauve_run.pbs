@@ -1,7 +1,7 @@
 #########
 ### Script: Mauve_run.pbs
 #########
-#PBS -N 10Oct2019Mauve.fasta
+#PBS -N 7Nov2019Mauve.fasta
 #PBS -q normal
 #PBS -o /shares/common/users/i.warner/
 #PBS -A i.warner
@@ -10,3 +10,6 @@
 #PBS -l select=2:ncpus=4:mem=250GB
 #PBS -l walltime=100:00:00
 
+cd /home/i.warner/bin/mauve_snapshot_2015-02-13/linux-x64/
+
+mauveAligner 
